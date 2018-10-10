@@ -13,10 +13,6 @@ import com.readystatesoftware.systembartint.SystemBarTintManager;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/**
- * Created by Administrator on 2017/11/16 0016.
- * Activity的相关工具类
- */
 
 public class ActivityUtils {
 

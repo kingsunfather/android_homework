@@ -9,9 +9,6 @@ import android.support.design.widget.BottomNavigationView;
 
 import java.lang.reflect.Field;
 
-/**
- * Created by Administrator on 2017/11/16 0016.
- */
 
 public class BottomNavigationViewHelper {
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
