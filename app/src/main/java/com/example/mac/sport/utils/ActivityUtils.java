@@ -13,7 +13,8 @@ import com.readystatesoftware.systembartint.SystemBarTintManager;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-
+/**this is java source is copied from github repo which belongs tecentopensourse repo
+* */
 public class ActivityUtils {
 
     /**
