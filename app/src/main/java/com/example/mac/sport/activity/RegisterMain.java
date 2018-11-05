@@ -21,6 +21,9 @@ import com.example.mac.sport.R;
 import com.example.mac.sport.entity.Result;
 import com.example.mac.sport.entity.User;
 
+import org.json.JSONObject;
+
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -34,7 +37,7 @@ public class RegisterMain extends AppCompatActivity{
     private EditText username_edit;
     private EditText password_edit;
     private EditText ensure_password_edit;
-    private String username;
+    private String email;
     private String pass;
     private String ensure_pass;
     private static final String baseUrl = "http://wz.oranme.com/";
@@ -54,11 +57,39 @@ public class RegisterMain extends AppCompatActivity{
         username_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if(!hasFocus){
-                    username=username_edit.getText().toString();
-                    if(!username.equals("")){
+                if (!hasFocus) {
+                    email = username_edit.getText().toString();
+                    if (!email.equals("")) {
                         //检测姓名重复
-                        Toast.makeText(RegisterMain.this,"检验名字是否重复",Toast.LENGTH_LONG).show();
+                        Retrofit retrofit = new Retrofit.Builder()
+                                .baseUrl(baseUrl)
+                                .addConverterFactory(GsonConverterFactory.create())
+                                .build();
+                        NetInterface netInterface = retrofit.create(NetInterface.class);
+                        JSONObject jsonObject=new JSONObject();
+                        try{
+                            jsonObject.put("email",email);
+                            Call<ResponseBody> call = netInterface.checkEmail(jsonObject);
+                            call.enqueue(new Callback<ResponseBody>() {
+                                @Override
+                                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                                    try{
+                                        String res=new String(response.body().bytes());
+                                        JSONObject result=new JSONObject(res);
+                                        if(!result.getString("code").equals("200"))
+                                            Toast.makeText(RegisterMain.this,result.getString("message"),Toast.LENGTH_LONG).show();
+                                    }catch (Exception e){
+                                        e.printStackTrace();
+                                    }
+                                }
+                                @Override
+                                public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                                }
+                            });
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
@@ -79,35 +110,45 @@ public class RegisterMain extends AppCompatActivity{
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                username=username_edit.getText().toString();
+                email=username_edit.getText().toString();
                 pass=password_edit.getText().toString();
                 ensure_pass=ensure_password_edit.getText().toString();
-                User user=new User(username,pass);
+                if(pass.equals("")){
+                    Toast.makeText(RegisterMain.this,"请输入密码",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                if(!pass.equals(ensure_pass)&&!ensure_pass.equals("")){
+                    Toast.makeText(RegisterMain.this,"两次输入密码不同",Toast.LENGTH_LONG).show();
+                    return;
+                }
+                User user=new User(email,pass);
                 //NetImp.register(user);
                 Retrofit retrofit=new Retrofit.Builder()
                         .baseUrl(baseUrl)
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
                 NetInterface netInterface=retrofit.create(NetInterface.class);
-                Call<Result> call=netInterface.register(user);
-                call.enqueue(new Callback<Result>() {
+                Call<ResponseBody> call=netInterface.register(user);
+                call.enqueue(new Callback<ResponseBody>() {
                     @Override
-                    public void onResponse(Call<Result> call, Response<Result> response) {
-                        System.out.println(response.body());
-                        Result res=response.body();
-                        if(res.getCode().equals("200")){
-                            Intent intent=new Intent();
-                            intent.setClass(RegisterMain.this,LoginMain.class);
-                            Bundle bundle=new Bundle();
-                            bundle.putString("email",username);
-                            intent.putExtras(bundle);
-                            startActivity(intent);
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                        try{
+                            String res=new String(response.body().bytes());
+                            JSONObject result=new JSONObject(res);
+                            if(result.getString("code").equals("200")){
+                                Intent intent=new Intent();
+                                intent.setClass(RegisterMain.this,LoginMain.class);
+                                intent.putExtra("email",email);
+                                startActivity(intent);
+                            }
+                            else
+                                Toast.makeText(RegisterMain.this,result.getString("message"),Toast.LENGTH_LONG).show();
+                        }catch (Exception e){
+                            e.printStackTrace();
                         }
-                        else
-                            Toast.makeText(RegisterMain.this,res.getMessage(),Toast.LENGTH_LONG).show();
                     }
                     @Override
-                    public void onFailure(Call<Result> call, Throwable t) {
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
                         System.out.print("-----------------------------------------------------------------");
                         System.out.println(t.getMessage());
                     }

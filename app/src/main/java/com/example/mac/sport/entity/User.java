@@ -3,14 +3,14 @@ package com.example.mac.sport.entity;
 import com.google.gson.annotations.SerializedName;
 
 public class User {
-    @SerializedName("name")
-    private String name;
-    @SerializedName("pass")
-    private String pass;
+    @SerializedName("email")
+    private String email;
+    @SerializedName("password")
+    private String password;
 
-    public User(String name,String pass){
-        this.name=name;
-        this.pass=pass;
+    public User(String email,String password){
+        this.email=email;
+        this.password=password;
     }
 
 }

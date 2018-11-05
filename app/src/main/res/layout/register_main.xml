@@ -58,7 +58,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/selector_bg_edit_2"
                             android:hint="@string/Username"
-                            android:inputType="textPersonName"
+                            android:inputType="textEmailAddress"
                             android:paddingBottom="2dp"
                             android:textColor="#f0f7f4"
                             android:textCursorDrawable="@drawable/bg_input_cursor_2"

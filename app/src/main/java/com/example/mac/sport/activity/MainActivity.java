@@ -35,15 +35,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @BindView(R.id.toolbartext)
     TextView toolbartext;
     private MenuItem menuItem;
-
     private boolean mIsExit;
+    //用户email
+    public static String email=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        email=getIntent().getStringExtra("email");
         ButterKnife.bind(this);
-
         ActivityUtils.StatusBarLightMode(this);
         ActivityUtils.setStatusBarColor(this, R.color.colorPrimary);//设置状态栏颜色
         initView();
@@ -158,6 +159,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
 
         }
+    }
+
+    public String getEmail(){
+        return email;
     }
 }
 
