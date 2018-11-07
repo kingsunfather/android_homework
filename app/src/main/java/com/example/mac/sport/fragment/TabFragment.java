@@ -1,5 +1,4 @@
 package com.example.mac.sport.fragment;
-
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,6 +18,9 @@ import com.example.mac.sport.adapter.RecycleViewAdapter;
 import com.example.mac.sport.utils.GlideImageLoader;
 import com.youth.banner.Banner;
 import com.youth.banner.listener.OnBannerListener;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +44,8 @@ public class TabFragment extends Fragment {
     int mPosition; //表示自己是属于足球or乒乓球or羽毛球
     private RecycleViewAdapter mAdapter;
     private Banner mBanner;
-
+    private JSONObject sports=new JSONObject();
+    private boolean hasInfo=false;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -50,14 +53,12 @@ public class TabFragment extends Fragment {
         //在绑定碎片的时候，黄油刀会放回一个unbinder，为了在destroy这个碎片的时候用Unbinder里面的unbind方法进行解绑
         //在activity 的destroy里面会自动解除绑定，但是在fragment里面不会自动解除绑定
         unbinder = ButterKnife.bind(this, rootView);
-
         //从bundle里面得到自己是属于足球or乒乓球or篮球
         mPosition = getArguments().getInt("position");
-
         //这里将每个运动类别的视图都做的一样，要是想每个运动视图做的不一样的话，那么可以将mPosition当作参数传入initView()方法里面
         initView();
-        initData();
 
+        initData();
         return rootView;
     }
 
@@ -92,24 +93,31 @@ public class TabFragment extends Fragment {
                         Toast ss= Toast.makeText(getContext(),"参加状态切换",Toast.LENGTH_LONG);
                         ss.show();
                         break;
+                    }
                 }
-
-
-            }
-        }});
-
+            }});
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(mAdapter);
-
-
     }
 
     private void initData() {
-        for (int i = 0; i < 20; i++) {
-            mdata.add("TabFragment_" + mPosition + "第" + i + "条数据");
-        }
+        sports=MainActivity.sports;
+        if(!hasInfo){
+            try{
+                JSONArray array1=sports.getJSONArray("data");
+                JSONObject temp1=array1.getJSONObject(mPosition);
+                JSONArray array2=temp1.getJSONArray("data");
+                for(int i=0;i<array2.length();i++)
+                    mdata.add(array2.getJSONObject(i).toString());
+                System.out.println("----------------------------------------------------------");
+                System.out.println(array2.length());
+                System.out.println("----------------------------------------------------------");
+            }catch (Exception e){
 
-        mAdapter.setNewData(mdata);//模拟网络请求成功后要调用这个方法刷新数据
+            }
+            hasInfo=true;
+        }
+        //mAdapter.setNewData(mdata);//模拟网络请求成功后要调用这个方法刷新数据
 
         //只在第一个页面加上banner，根据需求来添加banner
         if (mPosition == 0) {

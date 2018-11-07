@@ -13,8 +13,8 @@ import java.util.List;
  * 注释：Tablayout里viewpager的适配器，用来适配运动界面的adapter，用来加载管理有几个运动项目，每个运动项目的碎片，每个运动项目的名称
  */
 public class TabFragmentAdapter extends FragmentPagerAdapter {
-    private final List<Fragment> mFragmentList;
-    private final List<String> mTabTitle;
+    private  List<Fragment> mFragmentList;
+    private  List<String> mTabTitle;
 
     public TabFragmentAdapter(FragmentManager fm, List<Fragment> fragmentList, List<String> tabTitle) {
         super(fm);
@@ -40,5 +40,10 @@ public class TabFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         super.destroyItem(container, position, object);
+    }
+
+    public void setData(List<Fragment> fragmentList, List<String> tabTitle){
+        this.mFragmentList=fragmentList;
+        this.mTabTitle=tabTitle;
     }
 }

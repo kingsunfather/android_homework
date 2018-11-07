@@ -21,6 +21,7 @@
         <activity
             android:name=".activity.RegisterMain"
             android:theme="@style/Translucent" />
+        <activity android:name=".activity.UserInfo"/>
 
 
         <!--<activity-->

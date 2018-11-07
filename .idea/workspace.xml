@@ -12,23 +12,33 @@
     <list default="true" id="5319f02d-62f6-4bed-b624-3d2a05815a54" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/jarAnalysis.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskJars.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetImp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/User.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/TabFragmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/TabFragmentAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewPagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewPagerAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/HomeFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/HomeFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TabFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TabFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_today.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/register_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,52 +62,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RegisterMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-              <folding />
-            </state>
+      <file leaf-file-name="userinfo.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserFragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
-              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
               <folding>
-                <element signature="e#1615#1767#0" expanded="true" />
-                <element signature="e#1766#1767#0" expanded="true" />
-                <element signature="e#3492#5517#0" expanded="true" />
-                <element signature="e#5516#5517#0" expanded="true" />
-                <element signature="e#5581#5802#0" expanded="true" />
-                <element signature="e#5801#5802#0" expanded="true" />
+                <element signature="e#1384#2438#0" expanded="false" />
+                <element signature="e#1848#1862#0" expanded="true" />
+                <element signature="e#2240#2254#0" expanded="true" />
+                <element signature="e#2448#3491#0" expanded="false" />
+                <element signature="e#2907#2921#0" expanded="true" />
+                <element signature="e#3294#3308#0" expanded="true" />
+                <element signature="e#3999#4013#0" expanded="true" />
+                <element signature="e#4387#4401#0" expanded="true" />
+                <element signature="e#4595#5636#0" expanded="false" />
+                <element signature="e#5048#5062#0" expanded="true" />
+                <element signature="e#5437#5451#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_user.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+      <file leaf-file-name="colors.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="620">
+              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NetInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java">
+      <file leaf-file-name="UserFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="-260">
+              <caret line="67" column="36" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="36" />
+              <folding>
+                <element signature="e#1664#1816#0" expanded="true" />
+                <element signature="e#1815#1816#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,9 +125,11 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="319">
+              <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+              <folding>
+                <element signature="class#3782:4469" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,6 +141,7 @@
       <list>
         <option value="Interface" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -2075,20 +2098,34 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/TextView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/ClearEditText.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetImp.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/Result.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/User.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/register_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewHolder.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_today_new.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TabFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/today_item_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/QuickAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/TabFragmentAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml" />
       </list>
     </option>
   </component>
@@ -2117,19 +2154,12 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="android_homework" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="android_homework" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="android_homework" type="1abcf292:AndroidViewProjectNode" />
@@ -2149,17 +2179,27 @@
               <item name="sport" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="activity" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="android_homework" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="sport" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragment" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="device.picker.selection" value="FJH7N18725000535" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DemoDashboard" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -2353,13 +2393,13 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13993949" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718894" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29493088" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16743472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2376,207 +2416,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2266">
-          <caret line="133" column="36" lean-forward="false" selection-start-line="133" selection-start-column="36" selection-end-line="133" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="81" column="47" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewGridAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/TabFragmentAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2227">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TabFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/ActivityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="114" column="7" lean-forward="true" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/BottomNavigationViewHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/GlideImageLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/widget/EditText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="106" column="20" lean-forward="false" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/TextView.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/ClearEditText.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/selector_bg_edit_2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/bg_input_cursor_2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity.java" />
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="51" column="58" lean-forward="true" selection-start-line="51" selection-start-column="58" selection-end-line="51" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.4.0/451207353948708405a08287e2a315c3f23553fe/retrofit-2.4.0-sources.jar!/retrofit2/ExecutorCallAdapterFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/network_security_config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6330" column="0" lean-forward="false" selection-start-line="6330" selection-start-column="0" selection-end-line="6330" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetImp.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2595,41 +2446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/register_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/02493fc62c4052b490ef2c04d2ca5abf/jars/classes.jar!/android/support/v4/view/ViewPager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="317" column="38" lean-forward="true" selection-start-line="317" selection-start-column="38" selection-end-line="317" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2637,80 +2457,431 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="421" column="27" lean-forward="false" selection-start-line="421" selection-start-column="27" selection-end-line="421" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewPagerAdapter.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/org/json/JSONObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="207">
+          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/utils/BottomNavigationViewHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="103">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewHolder.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.30/b1cdf1d9751eb1e35fd8b05282af9b25c729725d/BaseRecyclerViewAdapterHelper-2.9.30-sources.jar!/com/chad/library/adapter/base/listener/OnItemChildClickListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="89" column="50" lean-forward="false" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
+        <state relative-caret-position="155">
+          <caret line="25" column="16" lean-forward="false" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/02493fc62c4052b490ef2c04d2ca5abf/jars/classes.jar!/android/support/v4/view/ViewPager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="227" column="16" lean-forward="false" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragmeny_tab.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_sports.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_today.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.30/b1cdf1d9751eb1e35fd8b05282af9b25c729725d/BaseRecyclerViewAdapterHelper-2.9.30-sources.jar!/com/chad/library/adapter/base/BaseQuickAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="474" column="16" lean-forward="false" selection-start-line="474" selection-start-column="16" selection-end-line="474" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewGridAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="107" column="29" lean-forward="false" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/02493fc62c4052b490ef2c04d2ca5abf/jars/classes.jar!/android/support/v4/view/PagerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_today_new.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/c726e7459e04d23f0fbca4d0c6b4ce04/jars/classes.jar!/android/support/v7/widget/RecyclerView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="4281" column="26" lean-forward="false" selection-start-line="4281" selection-start-column="26" selection-end-line="4281" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.CymChad/BaseRecyclerViewAdapterHelper/2.9.30/b1cdf1d9751eb1e35fd8b05282af9b25c729725d/BaseRecyclerViewAdapterHelper-2.9.30-sources.jar!/com/chad/library/adapter/base/BaseViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="593" column="30" lean-forward="false" selection-start-line="593" selection-start-column="30" selection-end-line="593" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/RecycleViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/NetWork/NetInterface.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/today_item_view.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="119" column="52" lean-forward="false" selection-start-line="119" selection-start-column="33" selection-end-line="119" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/LoginMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="73" column="63" lean-forward="false" selection-start-line="73" selection-start-column="59" selection-end-line="73" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="565" column="6" lean-forward="false" selection-start-line="565" selection-start-column="6" selection-end-line="565" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/7c8592166311094bc83c371572f181db/jars/classes.jar!/android/support/v4/app/FragmentPagerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/QuickAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/ViewPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="63" column="42" lean-forward="true" selection-start-line="63" selection-start-column="42" selection-end-line="63" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="118" column="9" lean-forward="true" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
+          <folding>
+            <element signature="e#2654#2655#0" expanded="false" />
+            <element signature="e#2696#2697#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/adapter/TabFragmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_gride_fenlei.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_banner.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_main_popuwindows.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-v24/plus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/selected_radius.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/gv_animation.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="24" column="29" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="29" />
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="54" column="55" lean-forward="false" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/login_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="55" lean-forward="true" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/register_main.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="59" column="50" lean-forward="true" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-963">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="62" column="38" lean-forward="false" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/RegisterMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="319">
+          <caret line="61" column="31" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
+          <folding>
+            <element signature="class#3782:4469" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+        <state relative-caret-position="-260">
+          <caret line="67" column="36" lean-forward="false" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="36" />
           <folding>
-            <element signature="e#1615#1767#0" expanded="true" />
-            <element signature="e#1766#1767#0" expanded="true" />
-            <element signature="e#3492#5517#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
-            <element signature="e#5581#5802#0" expanded="true" />
-            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="e#1664#1816#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="7342" column="0" lean-forward="false" selection-start-line="7342" selection-start-column="0" selection-end-line="7342" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#1384#2438#0" expanded="false" />
+            <element signature="e#1848#1862#0" expanded="true" />
+            <element signature="e#2240#2254#0" expanded="true" />
+            <element signature="e#2448#3491#0" expanded="false" />
+            <element signature="e#2907#2921#0" expanded="true" />
+            <element signature="e#3294#3308#0" expanded="true" />
+            <element signature="e#3999#4013#0" expanded="true" />
+            <element signature="e#4387#4401#0" expanded="true" />
+            <element signature="e#4595#5636#0" expanded="false" />
+            <element signature="e#5048#5062#0" expanded="true" />
+            <element signature="e#5437#5451#0" expanded="true" />
           </folding>
         </state>
       </provider>

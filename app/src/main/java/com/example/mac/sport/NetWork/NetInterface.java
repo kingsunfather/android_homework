@@ -1,5 +1,7 @@
 package com.example.mac.sport.NetWork;
 
+import android.util.JsonReader;
+
 import com.example.mac.sport.entity.Result;
 import com.example.mac.sport.entity.User;
 
@@ -23,4 +25,10 @@ public interface NetInterface {
     Call<ResponseBody> logout(@Body JSONObject jsonObject);
     @POST("me")
     Call<ResponseBody> myInfo(@Body JSONObject jsonObject);
+    @POST("getAllCategorys")
+    Call<ResponseBody> getAllCategorys(@Body JSONObject jsonObject);
+    @POST("getAllSports")
+    Call<ResponseBody> getAllSports(@Body JSONObject jsonObject);
+    @POST("getUserSports")
+    Call<ResponseBody> getUserSports(@Body JSONObject jsonObject);
 }

@@ -1,5 +1,6 @@
 package com.example.mac.sport.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.mac.sport.NetWork.NetInterface;
 import com.example.mac.sport.R;
 import com.example.mac.sport.adapter.ViewPagerAdapter;
 import com.example.mac.sport.fragment.TodayFragment;
@@ -22,8 +24,17 @@ import com.example.mac.sport.fragment.UserFragment;
 import com.example.mac.sport.utils.ActivityUtils;
 import com.example.mac.sport.utils.BottomNavigationViewHelper;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import okhttp3.ResponseBody;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -36,8 +47,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView toolbartext;
     private MenuItem menuItem;
     private boolean mIsExit;
+    private static final String baseUrl = "http://wz.oranme.com/";
     //用户email
     public static String email=null;
+    //运动的信息
+    public static JSONObject sports=new JSONObject();
+    private  ViewPagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ButterKnife.bind(this);
         ActivityUtils.StatusBarLightMode(this);
         ActivityUtils.setStatusBarColor(this, R.color.colorPrimary);//设置状态栏颜色
-        initView();
-
+        initData();
     }
 
     private void initView() {
@@ -57,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         BottomNavigationViewHelper.disableShiftMode(navigation);
 
         //设置ViewPageAdapter，运动，今日，我的，三个碎片
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
         adapter.addFragment(new HomeFragment());
         adapter.addFragment(new TodayFragment());
@@ -115,18 +129,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             public void onPageScrollStateChanged(int state) {
             }
         });
-
-     /*   //禁止ViewPager滑动
-        viewPager.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                return true;
-            }
-        });*/
-
     }
 
+    //运动页面的刷新
+    private void initData(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(baseUrl)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        NetInterface netInterface = retrofit.create(NetInterface.class);
+        JSONObject jsonObject = new JSONObject();
 
+        //获取所有的运动
+        try {
+            Call<ResponseBody> call = netInterface.getAllCategorys(jsonObject);
+            call.enqueue(new Callback<ResponseBody>() {
+                @Override
+                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                    try {
+                        String res = new String(response.body().bytes());
+                        JSONObject result = new JSONObject(res);
+                        sports = result;
+                        initView();
+                        //adapter.refreshMofifiedPageData(0);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+                @Override
+                public void onFailure(Call<ResponseBody> call, Throwable t) {
+                }
+            });
+        } catch (Exception e) {
+        }
+    }
     /**
      * 双击退出应用
      *
@@ -163,6 +199,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public String getEmail(){
         return email;
+    }
+
+    public JSONObject getSports(){
+        return sports;
     }
 }
 

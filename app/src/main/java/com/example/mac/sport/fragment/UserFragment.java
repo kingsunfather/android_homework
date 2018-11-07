@@ -15,6 +15,8 @@ import com.example.mac.sport.NetWork.NetInterface;
 import com.example.mac.sport.R;
 import com.example.mac.sport.activity.LoginMain;
 import com.example.mac.sport.activity.MainActivity;
+import com.example.mac.sport.activity.UserInfo;
+
 import org.json.JSONObject;
 import butterknife.BindView;
 import okhttp3.ResponseBody;
@@ -56,6 +58,14 @@ public class UserFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 showNormalDialog();
+            }
+        });
+        modifyUser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), UserInfo.class);
+                intent.putExtra("info",userInfo.toString());
+                startActivity(intent);
             }
         });
     }
