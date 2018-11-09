@@ -5,6 +5,8 @@ import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TextInputEditText;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.transition.Transition;
@@ -37,6 +39,9 @@ public class RegisterMain extends AppCompatActivity{
     private EditText username_edit;
     private EditText password_edit;
     private EditText ensure_password_edit;
+    private TextInputLayout username_label;
+    private TextInputLayout ensurepass_label;
+    private TextInputLayout pass_label;
     private String email;
     private String pass;
     private String ensure_pass;
@@ -54,46 +59,27 @@ public class RegisterMain extends AppCompatActivity{
                 animateRevealClose();
             }
         });
+
         username_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
-                if (!hasFocus) {
-                    email = username_edit.getText().toString();
-                    if (!email.equals("")) {
-                        //检测姓名重复
-                        Retrofit retrofit = new Retrofit.Builder()
-                                .baseUrl(baseUrl)
-                                .addConverterFactory(GsonConverterFactory.create())
-                                .build();
-                        NetInterface netInterface = retrofit.create(NetInterface.class);
-                        JSONObject jsonObject=new JSONObject();
-                        try{
-                            jsonObject.put("email",email);
-                            Call<ResponseBody> call = netInterface.checkEmail(jsonObject);
-                            call.enqueue(new Callback<ResponseBody>() {
-                                @Override
-                                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                                    try{
-                                        String res=new String(response.body().bytes());
-                                        JSONObject result=new JSONObject(res);
-                                        if(!result.getString("code").equals("200"))
-                                            Toast.makeText(RegisterMain.this,result.getString("message"),Toast.LENGTH_LONG).show();
-                                    }catch (Exception e){
-                                        e.printStackTrace();
-                                    }
-                                }
-                                @Override
-                                public void onFailure(Call<ResponseBody> call, Throwable t) {
+                if(!hasFocus){
 
-                                }
-                            });
-                        }catch (Exception e){
-                            e.printStackTrace();
-                        }
+                }
+            }
+        });
+        password_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                pass=password_edit.getText().toString();
+                if(!hasFocus){
+                    if(pass.length()<6){
+                        pass_label.setError("密码应大于6位");
                     }
                 }
             }
         });
+
         ensure_password_edit.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -101,7 +87,7 @@ public class RegisterMain extends AppCompatActivity{
                 ensure_pass=ensure_password_edit.getText().toString();
                 if(!hasFocus){
                     if(!pass.equals(ensure_pass)&&!ensure_pass.equals("")){
-                        Toast.makeText(RegisterMain.this,"两次输入密码不同",Toast.LENGTH_LONG).show();
+                        ensurepass_label.setError("两次输入密码不同");
                     }
                 }
             }
@@ -114,11 +100,11 @@ public class RegisterMain extends AppCompatActivity{
                 pass=password_edit.getText().toString();
                 ensure_pass=ensure_password_edit.getText().toString();
                 if(pass.equals("")){
-                    Toast.makeText(RegisterMain.this,"请输入密码",Toast.LENGTH_LONG).show();
+                    pass_label.setError("密码应大于6位");
                     return;
                 }
                 if(!pass.equals(ensure_pass)&&!ensure_pass.equals("")){
-                    Toast.makeText(RegisterMain.this,"两次输入密码不同",Toast.LENGTH_LONG).show();
+                    ensurepass_label.setError("两次输入密码不同");
                     return;
                 }
                 User user=new User(email,pass);
@@ -142,7 +128,7 @@ public class RegisterMain extends AppCompatActivity{
                                 startActivity(intent);
                             }
                             else
-                                Toast.makeText(RegisterMain.this,result.getString("message"),Toast.LENGTH_LONG).show();
+                                username_label.setError("该邮箱已注册");
                         }catch (Exception e){
                             e.printStackTrace();
                         }
@@ -164,6 +150,9 @@ public class RegisterMain extends AppCompatActivity{
         username_edit=findViewById(R.id.et_username);
         password_edit=findViewById(R.id.et_password);
         ensure_password_edit=findViewById(R.id.et_repeatpassword);
+        username_label=findViewById(R.id.username_label);
+        ensurepass_label=findViewById(R.id.ensurepass_label);
+        pass_label=findViewById(R.id.pass_label);
     }
 
     private void ShowEnterAnimation() {
