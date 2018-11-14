@@ -102,7 +102,7 @@ public class TodayFragment extends Fragment {
                 return R.layout.today_item_view;
             }
             @Override
-            public void convert(QuickAdapter.VH holder, String data, int position) {
+            public void convert(final QuickAdapter.VH holder, String data, int position) {
                 try{
                     JSONObject jsonObject=new JSONObject(data);
                     holder.setText(R.id.today_sports_name,jsonObject.getString("sportsName"));
@@ -111,7 +111,7 @@ public class TodayFragment extends Fragment {
                     holder.itemView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Toast.makeText(getContext(),"hahaa",Toast.LENGTH_LONG).show();
+                            Toast.makeText(getContext(),"你点了我一下"+holder.getAdapterPosition(),Toast.LENGTH_LONG).show();
                         }
                     });
                 }catch (Exception e){
