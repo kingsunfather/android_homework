@@ -16,33 +16,30 @@
         android:textColor="@color/white"
         android:textSize="20sp" />
 
-
-
-
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile_image"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:src="@mipmap/wode"
-        app:civ_border_color="#FF000000"
-        app:civ_border_width="0.5dp" />
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp"
         android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/icon"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0.5dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginBottom="5dp"
+            android:background="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -62,7 +59,7 @@
                 android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="哈哈"
+                android:text="未知"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -70,8 +67,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
             android:layout_marginBottom="5dp"
+            android:background="@color/white"
             android:orientation="horizontal">
 
             <TextView
@@ -91,7 +88,7 @@
                 android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="男"
+                android:text="未知"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -99,9 +96,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1"
             android:background="@color/white"
-            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -121,7 +118,7 @@
                 android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="北京"
+                android:text="未知"
                 android:textSize="20dp" />
 
         </LinearLayout>
@@ -150,7 +147,7 @@
                 android:layout_margin="@dimen/dp_10"
                 android:layout_weight="1"
                 android:gravity="right"
-                android:text="大家好"
+                android:text="未知"
                 android:textSize="20dp" />
 
         </LinearLayout>

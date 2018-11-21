@@ -22,7 +22,6 @@
             android:name=".activity.RegisterMain"
             android:theme="@style/Translucent" />
         <activity android:name=".activity.UserInfo"/>
-        <activity android:name=".activity.SportsDetailActivity"/>
 
 
         <!--<activity-->

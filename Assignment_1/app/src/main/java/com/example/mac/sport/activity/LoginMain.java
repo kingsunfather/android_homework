@@ -5,7 +5,6 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TextInputLayout;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
@@ -36,8 +35,6 @@ public class LoginMain extends AppCompatActivity{
     private Button btGo;
     private CardView cv;
     private FloatingActionButton fab;
-    private TextInputLayout login_pass_label;
-    private TextInputLayout login_email_label;
     private String email=null;
     private static final String baseUrl = "http://wz.oranme.com/";
     @Override
@@ -54,8 +51,6 @@ public class LoginMain extends AppCompatActivity{
     private void initView() {
         etUsername = findViewById(R.id.et_username);
         etPassword = findViewById(R.id.et_password);
-        login_pass_label=findViewById(R.id.login_pass_label);
-        login_email_label=findViewById(R.id.login_email_label);
         btGo = findViewById(R.id.bt_go);
         cv = findViewById(R.id.cv);
         fab = findViewById(R.id.fab);
@@ -67,22 +62,14 @@ public class LoginMain extends AppCompatActivity{
         btGo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                email=etUsername.getText().toString();
-                String password=etPassword.getText().toString();
-                if(email.length()==0){
-                    login_email_label.setError("请输入邮箱");
-                    return;
-                }
-                if(password.length()==0){
-                    login_pass_label.setError("请输入密码");
-                    return;
-                }
                 //登录
                 Retrofit retrofit=new Retrofit.Builder()
                         .baseUrl(baseUrl)
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
                 NetInterface netInterface=retrofit.create(NetInterface.class);
+                email=etUsername.getText().toString();
+                String password=etPassword.getText().toString();
                 User user=new User(email,password);
                 Call<ResponseBody> call=netInterface.login(user);
                 call.enqueue(new Callback<ResponseBody>() {
@@ -103,7 +90,7 @@ public class LoginMain extends AppCompatActivity{
                                 startActivity(i2);
                             }
                             else
-                                login_pass_label.setError("账号或密码错误");
+                                Toast.makeText(LoginMain.this,result.get("message").toString(),Toast.LENGTH_LONG).show();
                         }catch (Exception e){
                             e.printStackTrace();
                         }
