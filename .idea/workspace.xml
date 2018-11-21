@@ -157,6 +157,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/TodayFragment.java" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_main.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/register_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_main.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/today_item_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/today_item_view.xml" />
@@ -166,12 +167,17 @@
 =======
 =======
 >>>>>>> parent of 9b976c9... fix and add video
+=======
+>>>>>>> parent of 9b976c9... fix and add video
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/fragment/UserFragment.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_today.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_item_view.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9b976c9... fix and add video
+=======
 >>>>>>> parent of 9b976c9... fix and add video
 =======
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2279,10 +2285,15 @@
     <option name="height" value="952" />
 =======
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml" />
 =======
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml" />
+>>>>>>> parent of 9b976c9... fix and add video
+=======
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/activity/UserInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/userinfo.xml" />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2295,8 +2306,12 @@
     <option name="width" value="1346" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="height" value="718" />
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
+=======
+    <option name="height" value="728" />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
     <option name="height" value="728" />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2324,11 +2339,15 @@
     <panes>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="PackagesPane" />
 <<<<<<< HEAD
       <pane id="ProjectPane" />
 =======
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
+=======
+      <pane id="ProjectPane" />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
       <pane id="ProjectPane" />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2360,8 +2379,14 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+=======
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="sport" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="sport" type="cbb59c9e:AndroidPsiDirectoryNode" />
@@ -2588,10 +2613,14 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23504274" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52975494" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2246596" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23298033" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2607,9 +2636,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4577573" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30414745" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2642,6 +2675,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/mac/sport/entity/Result.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
@@ -2653,6 +2687,8 @@
 =======
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
 =======
+=======
+>>>>>>> parent of 9b976c9... fix and add video
 =======
 >>>>>>> parent of 9b976c9... fix and add video
     <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
@@ -2719,6 +2755,9 @@
       </provider>
     </entry>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9b976c9... fix and add video
+=======
 >>>>>>> parent of 9b976c9... fix and add video
 =======
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2832,7 +2871,11 @@
           <caret line="4281" column="26" lean-forward="false" selection-start-line="4281" selection-start-column="26" selection-end-line="4281" selection-end-column="26" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
+=======
+          <folding />
+>>>>>>> parent of 9b976c9... fix and add video
 =======
           <folding />
 >>>>>>> parent of 9b976c9... fix and add video
@@ -2851,6 +2894,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="593" column="30" lean-forward="false" selection-start-line="593" selection-start-column="30" selection-end-line="593" selection-end-column="30" />
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2891,6 +2935,8 @@
 =======
 =======
 >>>>>>> parent of 9b976c9... fix and add video
+=======
+>>>>>>> parent of 9b976c9... fix and add video
           <folding />
         </state>
       </provider>
@@ -2901,6 +2947,9 @@
           <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
           <folding />
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 9b976c9... fix and add video
+=======
 >>>>>>> parent of 9b976c9... fix and add video
 =======
 >>>>>>> parent of 9b976c9... fix and add video
@@ -3193,6 +3242,7 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/sports_detail_info.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -3205,6 +3255,8 @@
       </provider>
     </entry>
 >>>>>>> 9b976c9869bb9972c30382ab2e97546ad2f92e5f
+=======
+>>>>>>> parent of 9b976c9... fix and add video
 =======
 >>>>>>> parent of 9b976c9... fix and add video
 =======
