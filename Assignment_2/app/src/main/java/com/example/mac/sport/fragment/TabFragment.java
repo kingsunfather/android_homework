@@ -1,13 +1,11 @@
 package com.example.mac.sport.fragment;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -16,7 +14,6 @@ import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.example.mac.sport.R;
 import com.example.mac.sport.activity.MainActivity;
-import com.example.mac.sport.activity.SportsDetailActivity;
 import com.example.mac.sport.adapter.RecycleViewAdapter;
 import com.example.mac.sport.utils.GlideImageLoader;
 import com.youth.banner.Banner;
@@ -81,54 +78,24 @@ public class TabFragment extends Fragment {
         //开启默认的滑动加载动画
         mAdapter.openLoadAnimation();
 
-        mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
+        //给mRecycle增加点击事件的监听
+        mRecyclerView.addOnItemTouchListener(new OnItemChildClickListener() {
             @Override
-            public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
-                try{
-                    Intent intent=new Intent(getActivity(), SportsDetailActivity.class);
-                    JSONArray array1=sports.getJSONArray("data");
-                    JSONObject temp1=array1.getJSONObject(mPosition);
-                    JSONArray array2=temp1.getJSONArray("data");
-                    intent.putExtra("detailInfo",array2.getJSONObject(position).toString());
-                    startActivity(intent);
-                }catch (Exception e){
-
-                }
+            public void onSimpleItemChildClick(BaseQuickAdapter adapter, View view, int position) {
 
             }
-        });
 
-        //添加子控件的点击事件时，需要在adapter中先添加才会有效
-        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
-            @Override
-            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position){
+                super.onItemChildClick(adapter, view, position);
                 int itemViewId = view.getId();
-                switch (itemViewId) {
-                    case R.id.isLike: {
-                        Toast.makeText(getContext(), "参加状态切换", Toast.LENGTH_LONG).show();
+                switch (itemViewId){
+                    case R.id.isLike:{
+                        Toast ss= Toast.makeText(getContext(),"参加状态切换",Toast.LENGTH_LONG);
+                        ss.show();
                         break;
                     }
                 }
-            }
-        });
-
-//        //给mRecycle增加点击事件的监听
-//        mRecyclerView.addOnItemTouchListener(new OnItemChildClickListener() {
-//            @Override
-//            public void onSimpleItemChildClick(BaseQuickAdapter adapter, View view, int position) {
-//                System.out.print("hhaa");
-//            }
-//
-//            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position){
-//                super.onItemChildClick(adapter, view, position);
-//                int itemViewId = view.getId();
-//                switch (itemViewId){
-//                    case R.id.isLike:{
-//                        Toast.makeText(getContext(),"参加状态切换",Toast.LENGTH_LONG).show();
-//                        break;
-//                    }
-//                }
-//            }});
+            }});
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setAdapter(mAdapter);
     }
