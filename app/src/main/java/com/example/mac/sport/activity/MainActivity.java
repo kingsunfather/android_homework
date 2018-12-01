@@ -15,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.baidu.mapapi.SDKInitializer;
 import com.example.mac.sport.NetWork.NetInterface;
 import com.example.mac.sport.R;
 import com.example.mac.sport.adapter.ViewPagerAdapter;
@@ -57,6 +58,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SDKInitializer.initialize(getApplicationContext());
+
         setContentView(R.layout.activity_main);
         email=getIntent().getStringExtra("email");
         ButterKnife.bind(this);

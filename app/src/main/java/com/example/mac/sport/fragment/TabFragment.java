@@ -1,21 +1,31 @@
 package com.example.mac.sport.fragment;
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.listener.OnItemChildClickListener;
 import com.example.mac.sport.R;
+import com.example.mac.sport.activity.LoginMain;
 import com.example.mac.sport.activity.MainActivity;
+import com.example.mac.sport.activity.MapActivity;
 import com.example.mac.sport.activity.SportsDetailActivity;
 import com.example.mac.sport.adapter.RecycleViewAdapter;
 import com.example.mac.sport.utils.GlideImageLoader;
@@ -38,6 +48,8 @@ import butterknife.Unbinder;
  */
 
 public class TabFragment extends Fragment {
+    private static final int MY_PERMISSIONS_REQUEST_CALL_PHONE = 1;
+
 
     @BindView(R.id.recycler)
     RecyclerView mRecyclerView;
@@ -49,6 +61,11 @@ public class TabFragment extends Fragment {
     private Banner mBanner;
     private JSONObject sports=new JSONObject();
     private boolean hasInfo=false;
+
+    @Nullable
+    @BindView(R.id.coursePhone)
+    TextView course_phone;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -81,6 +98,7 @@ public class TabFragment extends Fragment {
         //开启默认的滑动加载动画
         mAdapter.openLoadAnimation();
 
+
         mAdapter.setOnItemClickListener(new BaseQuickAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
@@ -105,6 +123,9 @@ public class TabFragment extends Fragment {
                 int itemViewId = view.getId();
                 switch (itemViewId) {
                     case R.id.isLike: {
+                        Intent intent=new Intent(getActivity(), MapActivity.class);
+                        startActivity(intent);
+                        //test
                         Toast.makeText(getContext(), "参加状态切换", Toast.LENGTH_LONG).show();
                         break;
                     }
@@ -112,6 +133,74 @@ public class TabFragment extends Fragment {
             }
         });
 
+
+
+        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
+            @Override
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                int itemViewId = view.getId();
+                switch (itemViewId) {
+                    case R.id.coursePhone: {
+                        // 检查是否获得了权限（Android6.0运行时权限）
+                        if (ContextCompat.checkSelfPermission(getActivity(),
+                                Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+                            // 没有获得授权，申请授权
+                            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                                    Manifest.permission.CALL_PHONE)) {
+                                // 返回值：
+//                          如果app之前请求过该权限,被用户拒绝, 这个方法就会返回true.
+//                          如果用户之前拒绝权限的时候勾选了对话框中”Don’t ask again”的选项,那么这个方法会返回false.
+//                          如果设备策略禁止应用拥有这条权限, 这个方法也返回false.
+                                // 弹窗需要解释为何需要该权限，再次请求授权
+                                Toast.makeText(getActivity(), "请对Sport进行电话权限授权", Toast.LENGTH_LONG).show();
+
+                                // 帮跳转到该应用的设置界面，让用户手动授权
+                                Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+                                Uri uri = Uri.fromParts("package", getActivity().getPackageName(), null);
+                                intent.setData(uri);
+                                startActivity(intent);
+                            }else{
+                                // 不需要解释为何需要该权限，直接请求授权
+                                ActivityCompat.requestPermissions(getActivity(),
+                                        new String[]{Manifest.permission.CALL_PHONE},
+                                        MY_PERMISSIONS_REQUEST_CALL_PHONE);
+                            }
+                        }else {
+                            // 已经获得授权，可以打电话
+                            //拨打电话
+                            Intent intent = new Intent(Intent.ACTION_CALL);
+                            TextView temp=getActivity().findViewById(R.id.coursePhone);
+                            temp.setText("18810959899");
+                            String phoneNum=temp.getText().toString();
+                            Uri data = Uri.parse("tel:" + phoneNum);
+                            intent.setData(data);
+                            startActivity(intent);
+                        }
+
+                    }
+                }
+            }
+        });
+
+        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
+            @Override
+            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
+                int itemViewId = view.getId();
+                switch (itemViewId) {
+                    case R.id.courseMap: {
+                        try{
+                            Intent intent=new Intent(getActivity(), MapActivity.class);
+
+//                            intent.putExtra("detailInfo",array2.getJSONObject(position).toString());
+                            startActivity(intent);
+                        }catch (Exception e){
+
+                        }
+
+                    }
+                }
+            }
+        });
 //        //给mRecycle增加点击事件的监听
 //        mRecyclerView.addOnItemTouchListener(new OnItemChildClickListener() {
 //            @Override

@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.example.mac.sport.R;
 import com.example.mac.sport.utils.ActivityUtils;
 
@@ -57,6 +58,7 @@ public class SportsDetailActivity extends AppCompatActivity{
     @Override
     public void onCreate(Bundle bundle){
         super.onCreate(bundle);
+        SDKInitializer.initialize(getApplicationContext());
         setContentView(R.layout.sports_detail_info);
         ActivityUtils.StatusBarLightMode(this);
         ActivityUtils.setStatusBarColor(this, R.color.colorPrimary);//设置状态栏颜色

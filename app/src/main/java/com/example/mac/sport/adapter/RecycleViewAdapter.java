@@ -35,6 +35,8 @@ public class RecycleViewAdapter extends BaseQuickAdapter<String, BaseViewHolder>
             helper.setText(R.id.courseDetail,jsonObject.getString("introduce"));
             helper.setText(R.id.coachName,jsonObject.getString("coach"));
             helper.addOnClickListener(R.id.courseName).addOnClickListener(R.id.isLike);
+            helper.addOnClickListener(R.id.coursePhone);
+            helper.addOnClickListener(R.id.courseMap);
         }catch (Exception e){
 
         }

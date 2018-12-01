@@ -1,12 +1,18 @@
 package com.example.mac.sport.activity;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.transition.Explode;
@@ -15,6 +21,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.example.mac.sport.NetWork.NetInterface;
 import com.example.mac.sport.R;
 import com.example.mac.sport.entity.Result;
@@ -40,10 +47,14 @@ public class LoginMain extends AppCompatActivity{
     private TextInputLayout login_email_label;
     private String email=null;
     private static final String baseUrl = "http://wz.oranme.com/";
+//    private static final int MY_PERMISSIONS_REQUEST_CALL_PHONE = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        SDKInitializer.initialize(getApplicationContext());
+
         setContentView(R.layout.login_main);
         if(getIntent().hasExtra("email"))
             email=getIntent().getStringExtra("email");
@@ -61,6 +72,35 @@ public class LoginMain extends AppCompatActivity{
         fab = findViewById(R.id.fab);
         if(email!=null)
             etUsername.setText(email);
+
+//            // 检查是否获得了权限（Android6.0运行时权限）
+//            if (ContextCompat.checkSelfPermission(LoginMain.this,
+//                    Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+//                // 没有获得授权，申请授权
+//                if (ActivityCompat.shouldShowRequestPermissionRationale(LoginMain.this,
+//                        Manifest.permission.CALL_PHONE)) {
+//                    // 返回值：
+////                          如果app之前请求过该权限,被用户拒绝, 这个方法就会返回true.
+////                          如果用户之前拒绝权限的时候勾选了对话框中”Don’t ask again”的选项,那么这个方法会返回false.
+////                          如果设备策略禁止应用拥有这条权限, 这个方法也返回false.
+//                    // 弹窗需要解释为何需要该权限，再次请求授权
+//                    Toast.makeText(LoginMain.this, "请授权！", Toast.LENGTH_LONG).show();
+//
+//                    // 帮跳转到该应用的设置界面，让用户手动授权
+//                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+//                    Uri uri = Uri.fromParts("package", getPackageName(), null);
+//                    intent.setData(uri);
+//                    startActivity(intent);
+//                }else{
+//                    // 不需要解释为何需要该权限，直接请求授权
+//                    ActivityCompat.requestPermissions(LoginMain.this,
+//                            new String[]{Manifest.permission.CALL_PHONE},
+//                            MY_PERMISSIONS_REQUEST_CALL_PHONE);
+//                }
+//            }else {
+//                // 已经获得授权，可以打电话
+//            }
+
     }
 
     private void setListener(){
