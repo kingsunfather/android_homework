@@ -178,29 +178,20 @@ public class TabFragment extends Fragment {
                         }
 
                     }
-                }
-            }
-        });
-
-        mAdapter.setOnItemChildClickListener(new BaseQuickAdapter.OnItemChildClickListener() {
-            @Override
-            public void onItemChildClick(BaseQuickAdapter adapter, View view, int position) {
-                int itemViewId = view.getId();
-                switch (itemViewId) {
+                    break;
                     case R.id.courseMap: {
                         try{
                             Intent intent=new Intent(getActivity(), MapActivity.class);
-
 //                            intent.putExtra("detailInfo",array2.getJSONObject(position).toString());
                             startActivity(intent);
                         }catch (Exception e){
-
                         }
-
                     }
+                    break;
                 }
             }
         });
+
 //        //给mRecycle增加点击事件的监听
 //        mRecyclerView.addOnItemTouchListener(new OnItemChildClickListener() {
 //            @Override
