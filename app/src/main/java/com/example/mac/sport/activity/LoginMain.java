@@ -1,35 +1,31 @@
 package com.example.mac.sport.activity;
 
-import android.Manifest;
+
 import android.annotation.SuppressLint;
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.transition.Explode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.example.mac.sport.NetWork.NetInterface;
 import com.example.mac.sport.R;
-import com.example.mac.sport.entity.Result;
 import com.example.mac.sport.entity.User;
-
-import org.json.JSONException;
+import com.tencent.tauth.IUiListener;
+import com.tencent.tauth.Tencent;
+import com.tencent.tauth.UiError;
+import com.tencent.connect.UserInfo;
+import com.tencent.connect.auth.QQToken;
+import com.tencent.connect.common.Constants;
 import org.json.JSONObject;
-
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -46,7 +42,10 @@ public class LoginMain extends AppCompatActivity{
     private TextInputLayout login_pass_label;
     private TextInputLayout login_email_label;
     private String email=null;
+    private TextView qqlogin;
     private static final String baseUrl = "http://wz.oranme.com/";
+    Tencent mTencent;
+
 //    private static final int MY_PERMISSIONS_REQUEST_CALL_PHONE = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +69,8 @@ public class LoginMain extends AppCompatActivity{
         btGo = findViewById(R.id.bt_go);
         cv = findViewById(R.id.cv);
         fab = findViewById(R.id.fab);
+        qqlogin=findViewById(R.id.qqlogin);
+
         if(email!=null)
             etUsername.setText(email);
 
@@ -163,6 +164,16 @@ public class LoginMain extends AppCompatActivity{
                 startActivity(new Intent(LoginMain.this, RegisterMain.class), options.toBundle());
             }
         });
+
+
+
+        qqlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mTencent = Tencent.createInstance("1108064784",getApplicationContext());//将123123123改为自己的AppID
+                mTencent.login(LoginMain.this,"all",new BaseUiListener());
+            }
+        });
     }
 
     @SuppressLint("RestrictedApi")
@@ -178,6 +189,70 @@ public class LoginMain extends AppCompatActivity{
         super.onResume();
         fab.setVisibility(View.VISIBLE);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        Tencent.onActivityResultData(requestCode,resultCode,data,new BaseUiListener());
+    }
+
+    private class BaseUiListener implements IUiListener {
+
+        @Override
+        public void onComplete(Object response) {
+            try{
+                String openid=((JSONObject)response).getString("openid");
+                mTencent.setOpenId(openid);
+                mTencent.setAccessToken(((JSONObject) response).getString("access_token"),((JSONObject) response).getString("expires_in"));
+//               获取具体的用户信息
+                QQToken qqToken = mTencent.getQQToken();
+                UserInfo info = new UserInfo(getApplicationContext(), qqToken);
+                info.getUserInfo(new IUiListener() {
+                    @Override
+                    public void onComplete(Object o) {
+                        try{
+                            Explode explode = new Explode();
+                            explode.setDuration(500);
+                            getWindow().setExitTransition(explode);
+                            getWindow().setEnterTransition(explode);
+                            Intent i2 = new Intent(LoginMain.this,MainActivity.class);
+                            i2.putExtra("email",((JSONObject) o).getString("nickname"));
+                            startActivity(i2);
+                        }catch (Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+
+                    @Override
+                    public void onError(UiError uiError) {
+
+                    }
+
+                    @Override
+                    public void onCancel() {
+
+                    }
+                });
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+
+
+        }
+
+        protected void doComplete(JSONObject values) {
+        }
+
+        @Override
+        public void onError(UiError e) {
+//            showResult("onError:", "code:" + e.errorCode + ", msg:"
+//                    + e.errorMessage + ", detail:" + e.errorDetail);
+        }
+        @Override
+        public void onCancel() {
+//            showResult("onCancel", "");
+        }
+    }
+
 }
 
 
