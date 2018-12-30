@@ -1,5 +1,5 @@
 # android_homework
-this repo is used for submitting and updating android homework which is written in BJTU
+this repo is used for submitting and updating android homework which is written in BJTU course number A0L253Q.
 
 Team members are  
 16301157 刘如日  
